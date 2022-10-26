@@ -1,10 +1,12 @@
 import os
 import time
-from .params import GUILD_NAME, MIN_PLAYERS, MIN_KILLS
 
-from webdriver_manager.firefox import GeckoDriverManager #Driver for Firefox
+from .params import GUILD_NAME, MIN_PLAYERS, MIN_KILLS
+from dotenv import load_dotenv
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -14,11 +16,15 @@ from selenium.common.exceptions import TimeoutException
 class ScanActivityTool:
     def execute(numberDays, minAttendance, fromUTC = 0, toUTC = 23):
         print("Trying to get list of players...")
-        os.environ['MOZ_HEADLESS'] = '1' #Setting to suppress browser window opening on driver.get
-        driver = webdriver.Firefox(service=Service(GeckoDriverManager().install())) #Firefox
         
+        options = Options()
+        load_dotenv()
+        driver_path = os.getenv("CHROME_DRIVER_BINARY_PATH")
+        options.add_argument("--headless")
+        options.add_experimental_option('excludeSwitches', ['enable-logging']) #disable logging
+        driver = webdriver.Chrome(options=options, service=Service(driver_path))
 
-        driver.get("https://zvz.aotools.net/g/") #Page updates every day at 16:30UTC
+        driver.get("https://zvz.aotools.net/g/")
         inputGuild = driver.find_element("id", "search_guild")
         inputPlayers = driver.find_element("id", "minp")
         inputKills = driver.find_element("id", "mink")
