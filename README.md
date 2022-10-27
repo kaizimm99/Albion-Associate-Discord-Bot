@@ -21,6 +21,7 @@ Every sunday at 20:05UTC the credits are evaluatet and a list is created. Any pl
 ## Steps to get the bot running:
 - change file ".env-model" to ".env"
 - fill .env
+- in file "params.py" in directory webscraping, change GUILD_NAME to your guilds name
 - setup mongodb database
 - setup hosting
 
