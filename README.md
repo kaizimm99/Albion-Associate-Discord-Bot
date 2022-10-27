@@ -7,8 +7,8 @@ Tis bot evaluates the attendance of players in a guild. It uses https://zvz.aoto
 - Raspberry PI (Hosting)
 
 ## Credit System
-Credits will be given out at 20:00 UTC every day to whoever partivipated at a pvp event with the following parametrs at least once.\n
-### Parameters:\n
+Credits will be given out at 20:00 UTC every day to whoever partivipated at a pvp event with the following parametrs at least once.
+### Parameters:
 - 20 or more players in the battle
 - at least 10 deaths during the battle
 
