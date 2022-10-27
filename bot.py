@@ -20,7 +20,6 @@ async def on_ready():
     scheduler.start()
 
     botFunctions = BotFunctions(client=client)
-    #Note: ZvZ Activity Tool page updates every day at 16:30UTC
     scheduler.add_job(botFunctions.giveAssociateCredits, trigger='cron', day_of_week='0-6', hour='20', minute='0') 
     scheduler.add_job(botFunctions.updateAssociates, trigger='cron', day_of_week='6', hour='20', minute='5')
 
