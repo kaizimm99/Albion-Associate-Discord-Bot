@@ -24,6 +24,7 @@ Every sunday at 20:05UTC the credits are evaluatet and a list is created. Any pl
 - in file "params.py" in directory webscraping, change GUILD_NAME to your guilds name
 - setup mongodb database
 - setup hosting
+- run "python3 bot.py"
 
 ## Hosting
 For initial private use the bot was self hosted on a raspberry pi. The bot.py script is executed via @reboot cronjob. You may decide on a different hosting method.
