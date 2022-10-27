@@ -1,9 +1,9 @@
+import os
 from discord.client import Client
 from discord.message import Message
 from webscraping.params import GUILD_NAME
 from dotenv import load_dotenv
 from database import db
-import os
 
 class Commands:
     load_dotenv()
