@@ -7,7 +7,7 @@ This bot evaluates the attendance of players in a guild. It uses https://zvz.aot
 - Raspberry PI (Hosting)
 
 ## Credit System
-Credits will be given out at 20:00 UTC every day to whoever participated at a pvp event with the following parametrs at least once.
+Credits will be given out at 20:00 UTC every day to whoever participated at a pvp event with the following parameters at least once.
 ### Parameters:
 - 20 or more players in the battle
 - at least 10 deaths during the battle
