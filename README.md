@@ -1,5 +1,5 @@
 # Albion-Associate-Discord-Bot
-Tis bot evaluates the attendance of players in a guild. It uses https://zvz.aotools.net/g/ to get the required data. Based on a credit-system, the bot will make a list of who should get an attendance/associate role.
+This bot evaluates the attendance of players in a guild. It uses https://zvz.aotools.net/g/ to get the required data. Based on a credit-system, the bot will make a list of who should get an attendance/associate role.
 
 ## Technologies
 - Python (Bot)
@@ -23,3 +23,6 @@ Every sunday at 20:05UTC the credits are evaluatet and a list is created. Any pl
 
 ## Hosting
 For initial private use the bot was self hosted on a raspberry pi. The bot.py script is executed via @reboot cronjob. You may decide on a different hosting method.
+
+
+_Creator: schmusekai#3971 (Discord)_
