@@ -13,9 +13,9 @@ Credits will be given out at 20:00 UTC every day to whoever partivipated at a pv
 - at least 10 deaths during the battle
 
 ## Who will be eligable for associate rank?
-Every sunday at 20:05UTC the credits are evaluatet and a list is created. Any player that participated at a pvp event (note the parameters) on **2 or more days** during the **last 7 days**, he will be market as eligable for attendance/associate role. Once the list is evaluated on sunday 22:05 UTC, a list of players that should be granted the associate role is sent as a discord message. All existing credits will be removed/reset for the following week.
+Every sunday at 20:05UTC the credits are evaluatet and a list is created. Any player that participated in a pvp event (note the parameters) on **2 or more days** during the **last 7 days** will be market as eligable for attendance/associate role. Once the list is evaluated on sunday 22:05 UTC, a list of players that should be granted the associate role is sent as a discord message. All existing credits will be removed/reset for the following week.
 
-##Commands
+## Commands
 -!getassociates (get the current list of associates)
 
 ## Steps to get the bot running:
